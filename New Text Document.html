@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <style>
+            #wrapper {
+    position: relative;
+}
+#wrapper:before, #wrapper:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px; /* Height of the effect */
+}
+#wrapper:before {
+    top: 0;
+    /* Use your background color, assuming white: */
+    background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+#wrapper:after {
+    bottom: 0;
+    /* Use your background color, assuming white: */
+    background-image: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+#mydiv {
+    background: red;
+    height: 20em;
+    overflow: auto;
+    border: 0 solid transparent;
+    border-width: 10px 0; /* 10px to be able to read first and last lines */
+}
+
+
+.music {
+    background:rgba(255,255,255,0.6);
+    width: 800px;
+    min-height: 900px;
+    position: absolute;
+    left: 524.5px;
+    right: 524.5px;
+}
+
+.song-1 {
+    position: absolute;
+    left: 30px;
+    float: left;
+}
+
+.song-2 {
+    float: right;
+    position: absolute;
+    right: 30px;
+}
+.music h1 {
+    text-align: center;
+}
+
+.music h3 {
+    text-align: center;
+}
+        </style>
+    </head>
+    <body><div id="wrapper">
+        <div id="mydiv">
+            Your content
+        </div>
+    </div>
+<div class="music">
+    <h1>Music I used</h1>
+
+    <h3>On this page you can find all the music I used in my skill compilations</h3>
+
+    <div class="song-1">
+        <iframe width="350" height="350" scrolling="no" frameborder="no"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/117698423&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+
+    <div class="song-2">
+        <iframe width="350" height="350" scrolling="no" frameborder="no"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/164076894&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
